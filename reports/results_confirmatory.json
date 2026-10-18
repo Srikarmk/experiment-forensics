@@ -1,0 +1,207 @@
+{
+  "upworthy": {
+    "release": "confirmatory",
+    "pipeline_check": {
+      "packages": 105551,
+      "tests": 22743,
+      "impressions": 376529158,
+      "clicks": 5741684,
+      "clicks_exceed_impressions": 0,
+      "first_created": "2013-01-24 14:57:06",
+      "last_created": "2015-04-30 02:03:39.370000",
+      "published_packages": 105551,
+      "published_tests": 22743,
+      "matches_paper": true
+    },
+    "exclusion": {
+      "tests_total": 22743,
+      "tests_flagged": 4907,
+      "share_flagged": 0.2157586949830717,
+      "flagged_any_package_rule": 4910,
+      "flagged_all_packages_rule": 4906,
+      "window_shift_sensitivity": {
+        "-24h": 4902,
+        "-12h": 4908,
+        "+12h": 4903,
+        "+24h": 4879
+      },
+      "srm_share_p001_in_window": 0.7009174311926606,
+      "srm_share_p001_outside": 0.0051581071989235255,
+      "srm_median_p_in_window": 1.3221240534709085e-06,
+      "srm_median_p_outside": 0.44318183994557436,
+      "tests_kept": 17836,
+      "packages_kept": 85706,
+      "packages_dropped": 19845
+    },
+    "identical_arm_pairs": {
+      "kept": {
+        "pairs": 2011,
+        "share_p_lt_05": 0.1287916459472899,
+        "mean_z_squared": 1.9168713772321637,
+        "binom_p_vs_5pct": 1.3288829414175275e-42
+      },
+      "flagged": {
+        "pairs": 120,
+        "share_p_lt_05": 0.1,
+        "mean_z_squared": 1.8524741429087779,
+        "binom_p_vs_5pct": 0.019425024119230708
+      }
+    },
+    "effects": {
+      "n_comparisons": 67851,
+      "n_tests": 17831,
+      "diff_quantiles_pp": {
+        "0.05": -0.9903680523553369,
+        "0.25": -0.3651386409555544,
+        "0.5": -0.07379436493668602,
+        "0.75": 0.19354138817199962,
+        "0.95": 0.7204753399794056
+      },
+      "abs_diff_median_pp": 0.2811789398025342,
+      "abs_diff_mean_pp": 0.3955688171036853,
+      "rel_quantiles": {
+        "0.05": -0.5752566818175878,
+        "0.25": -0.28320589253181666,
+        "0.5": -0.0669722434428317,
+        "0.75": 0.1880820231764242,
+        "0.95": 0.8788218989811534
+      },
+      "abs_rel_median": 0.24813106110535726,
+      "share_p_lt_05": 0.25031318624633386,
+      "share_abs_rel_gt_10pct": 0.780532747615608,
+      "reference_rate_median": 0.012071463061323033,
+      "n0_median": 3109.0,
+      "n1_median": 3111.0,
+      "arms_dropped_small": 21
+    },
+    "power": {
+      "n_tests": 17831,
+      "mde_abs_median_pp": 0.7426710062443058,
+      "mde_abs_quartiles_pp": [
+        0.5740007076361462,
+        0.9508957515727047
+      ],
+      "mde_rel_median": 0.6344437237857686,
+      "mde_rel_quartiles": [
+        0.5087633096499453,
+        0.8023501743284496
+      ],
+      "n_per_arm_median": 3078.3333333333335,
+      "rate_median": 0.011625307399955287,
+      "typical_true_abs_effect_pp_grid": 0.18862665392882227,
+      "typical_true_abs_effect_pp_normal": 0.2635492910417648,
+      "typical_observed_abs_effect_pp": 0.2811789398025342,
+      "share_tests_mde_le_typical_grid": 0.0007851494588076945,
+      "share_tests_mde_le_typical_observed": 0.009590039818293983,
+      "mean_power_at_typical_grid": 0.13316390895115798,
+      "median_power_at_typical_grid": 0.1097166501487121
+    },
+    "prior": {
+      "normal_mu_pp": -0.0890028162476937,
+      "normal_tau_pp": 0.3801849173028721,
+      "grid_mean_pp": -0.09195261268680269,
+      "grid_sd_pp": 0.4287676428662335,
+      "grid_abs_quantiles_pp": {
+        "0.5": 0.18862665392882227,
+        "0.9": 0.6448916967388856,
+        "0.99": 1.560389343509755
+      },
+      "grid_share_mass_within_0_1pp": 0.32745149827611975
+    },
+    "peeking": {
+      "n_sims": 20000,
+      "msprt_tau_pp": 0.36,
+      "aa": {
+        "naive": {
+          "1": 0.04895,
+          "2": 0.07985,
+          "5": 0.13895,
+          "10": 0.18715,
+          "20": 0.23645,
+          "50": 0.2814,
+          "100": 0.3055
+        },
+        "msprt": {
+          "1": 0.0012,
+          "2": 0.0013,
+          "5": 0.00175,
+          "10": 0.0023,
+          "20": 0.00275,
+          "50": 0.00295,
+          "100": 0.0031
+        }
+      },
+      "mc_se_at_5pct": 0.0015411035007422442,
+      "power": {
+        "0.1": {
+          "fixed_single_look": 0.07325,
+          "msprt_10_looks": 0.00225,
+          "msprt_100_looks": 0.00355
+        },
+        "0.25": {
+          "fixed_single_look": 0.20985,
+          "msprt_10_looks": 0.0176,
+          "msprt_100_looks": 0.02195
+        },
+        "0.5": {
+          "fixed_single_look": 0.53005,
+          "msprt_10_looks": 0.11575,
+          "msprt_100_looks": 0.1327
+        }
+      }
+    },
+    "winners": {
+      "tests_with_winner_beating_reference": 12655,
+      "significant_winners": 3820,
+      "share_of_tests_significant": 0.2142336380460995,
+      "median_observed_lift_pp": 0.7853440659712292,
+      "median_observed_rel_lift": 0.8582854799015586,
+      "median_shrinkage_grid": 0.40627810310922274,
+      "median_shrinkage_normal": 0.3965099428564436,
+      "median_posterior_lift_pp_grid": 0.40629525779488174,
+      "median_posterior_lift_pp_normal": 0.43441941446222776,
+      "share_prob_positive_ge_95_grid": 0.3832460732984293,
+      "overdispersion_phi": 1.9168713772321637,
+      "median_shrinkage_grid_inflated_se": 0.8831660299321588,
+      "share_significant_inflated_se": 0.49607329842931935,
+      "examples": [
+        {
+          "test_id": "52e9a64344fd73cacf000023",
+          "reference_headline": "Watch A Congressman Threaten To Physically Harm A Reporter For Asking The Wrong Question",
+          "winner_headline": "Reporter Asks The Wrong Question, Politician Threatens To Throw Reporter Off A Balcony",
+          "same_headline": false,
+          "same_image": true,
+          "n0": 111,
+          "c0": 1,
+          "n1": 115,
+          "c1": 8,
+          "observed_pp": 6.055620838229534,
+          "observed_rel": 6.721739130434783,
+          "p": 0.019943657410329444,
+          "posterior_grid_pp": 0.0697912178305133,
+          "posterior_normal_pp": 0.03944806321646596,
+          "shrinkage_grid": 0.9884749690089715,
+          "prob_positive_grid": 0.42146477302002694
+        },
+        {
+          "test_id": "53208267c532cf5ce700003d",
+          "reference_headline": "HIV-Positive, Homeless, And Gay In New York At The Age Of 16? Give This Story A Listen.",
+          "winner_headline": "HIV-Positive, Homeless, And Gay In New York At The Age Of 16? Give This Story A Listen.",
+          "same_headline": true,
+          "same_image": false,
+          "n0": 2665,
+          "c0": 22,
+          "n1": 2597,
+          "c1": 45,
+          "observed_pp": 0.9072526316625982,
+          "observed_rel": 1.0990128469912837,
+          "p": 0.0033391138643296715,
+          "posterior_grid_pp": 0.5387094443658126,
+          "posterior_normal_pp": 0.5107077869305535,
+          "shrinkage_grid": 0.4062189234121115,
+          "prob_positive_grid": 0.9360496298424936
+        }
+      ]
+    }
+  }
+}
