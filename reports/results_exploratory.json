@@ -1,0 +1,785 @@
+{
+  "upworthy": {
+    "release": "exploratory",
+    "pipeline_check": {
+      "packages": 22666,
+      "tests": 4873,
+      "impressions": 81024151,
+      "clicks": 1231208,
+      "clicks_exceed_impressions": 0,
+      "first_created": "2013-01-26 20:10:36",
+      "last_created": "2015-04-29 22:46:43.618000",
+      "published_packages": 22666,
+      "published_tests": 4873,
+      "matches_paper": true
+    },
+    "exclusion": {
+      "tests_total": 4873,
+      "tests_flagged": 1050,
+      "share_flagged": 0.21547301457008003,
+      "flagged_any_package_rule": 1050,
+      "flagged_all_packages_rule": 1050,
+      "window_shift_sensitivity": {
+        "-24h": 1047,
+        "-12h": 1048,
+        "+12h": 1051,
+        "+24h": 1044
+      },
+      "srm_share_p001_in_window": 0.7,
+      "srm_share_p001_outside": 0.004708344232278315,
+      "srm_median_p_in_window": 1.3633212139007165e-06,
+      "srm_median_p_outside": 0.4519305781266315,
+      "tests_kept": 3823,
+      "packages_kept": 18388,
+      "packages_dropped": 4278
+    },
+    "identical_arm_pairs": {
+      "kept": {
+        "pairs": 460,
+        "share_p_lt_05": 0.13260869565217392,
+        "mean_z_squared": 1.8013566567488195,
+        "binom_p_vs_5pct": 6.9235120608028344e-12
+      },
+      "flagged": {
+        "pairs": 16,
+        "share_p_lt_05": 0.0625,
+        "mean_z_squared": 1.1822026855316476,
+        "binom_p_vs_5pct": 0.5598733313482344
+      }
+    },
+    "effects": {
+      "n_comparisons": 14561,
+      "n_tests": 3822,
+      "diff_quantiles_pp": {
+        "0.05": -0.9326174381791736,
+        "0.25": -0.3402452088309409,
+        "0.5": -0.06211480362537766,
+        "0.75": 0.1981296275919109,
+        "0.95": 0.7167337668438565
+      },
+      "abs_diff_median_pp": 0.27101766961125234,
+      "abs_diff_mean_pp": 0.3816124428466733,
+      "rel_quantiles": {
+        "0.05": -0.5664811008997275,
+        "0.25": -0.2717513048142194,
+        "0.5": -0.05733924357928215,
+        "0.75": 0.1989082582283426,
+        "0.95": 0.8413366796122549
+      },
+      "abs_rel_median": 0.24469863222699162,
+      "share_p_lt_05": 0.23569809765812788,
+      "share_abs_rel_gt_10pct": 0.7803269679901085,
+      "reference_rate_median": 0.011770031688546853,
+      "n0_median": 3120.0,
+      "n1_median": 3118.0,
+      "arms_dropped_small": 4
+    },
+    "power": {
+      "n_tests": 3822,
+      "mde_abs_median_pp": 0.7424931465839782,
+      "mde_abs_quartiles_pp": [
+        0.5690093292424494,
+        0.9361343263068769
+      ],
+      "mde_rel_median": 0.6414264555288642,
+      "mde_rel_quartiles": [
+        0.5064685363684398,
+        0.8027556510079421
+      ],
+      "n_per_arm_median": 3082.9,
+      "rate_median": 0.011569205474914385,
+      "typical_true_abs_effect_pp_grid": 0.14752343024730802,
+      "typical_true_abs_effect_pp_normal": 0.24905034485283375,
+      "typical_observed_abs_effect_pp": 0.27101766961125234,
+      "share_tests_mde_le_typical_grid": 0.00026164311878597594,
+      "share_tests_mde_le_typical_observed": 0.01020408163265306,
+      "mean_power_at_typical_grid": 0.10275104431406573,
+      "median_power_at_typical_grid": 0.08618439360716579
+    },
+    "prior": {
+      "normal_mu_pp": -0.07417636202679766,
+      "normal_tau_pp": 0.3616888032387167,
+      "grid_mean_pp": -0.0771411712188472,
+      "grid_sd_pp": 0.40977633854616713,
+      "grid_abs_quantiles_pp": {
+        "0.5": 0.14752343024730802,
+        "0.9": 0.5759542731372747,
+        "0.99": 1.7327175489401838
+      },
+      "grid_share_mass_within_0_1pp": 0.381142671088864
+    },
+    "peeking": {
+      "n_sims": 20000,
+      "msprt_tau_pp": 0.36,
+      "aa": {
+        "naive": {
+          "1": 0.05185,
+          "2": 0.0829,
+          "5": 0.14175,
+          "10": 0.18945,
+          "20": 0.23615,
+          "50": 0.28165,
+          "100": 0.30365
+        },
+        "msprt": {
+          "1": 0.0013,
+          "2": 0.0014,
+          "5": 0.0019,
+          "10": 0.0023,
+          "20": 0.0027,
+          "50": 0.0029,
+          "100": 0.00315
+        }
+      },
+      "mc_se_at_5pct": 0.0015411035007422442,
+      "power": {
+        "0.1": {
+          "fixed_single_look": 0.0734,
+          "msprt_10_looks": 0.00315,
+          "msprt_100_looks": 0.00435
+        },
+        "0.25": {
+          "fixed_single_look": 0.2068,
+          "msprt_10_looks": 0.01735,
+          "msprt_100_looks": 0.02195
+        },
+        "0.5": {
+          "fixed_single_look": 0.52985,
+          "msprt_10_looks": 0.1176,
+          "msprt_100_looks": 0.1335
+        }
+      }
+    },
+    "winners": {
+      "tests_with_winner_beating_reference": 2770,
+      "significant_winners": 847,
+      "share_of_tests_significant": 0.2216117216117216,
+      "median_observed_lift_pp": 0.7812470816681883,
+      "median_observed_rel_lift": 0.8275081187408914,
+      "median_shrinkage_grid": 0.4051439417763265,
+      "median_shrinkage_normal": 0.4181246189627471,
+      "median_posterior_lift_pp_grid": 0.40518978545757095,
+      "median_posterior_lift_pp_normal": 0.41805232173803364,
+      "share_prob_positive_ge_95_grid": 0.4214876033057851,
+      "overdispersion_phi": 1.8013566567488195,
+      "median_shrinkage_grid_inflated_se": 0.8334658229715668,
+      "share_significant_inflated_se": 0.5478158205430933,
+      "examples": [
+        {
+          "test_id": "54e4cf5f373139001a900000",
+          "reference_headline": "A comic about bullying with an ending I did not see coming *at all.*",
+          "winner_headline": "The bully punches him in the face. Later, he follows the bully home, and that's where he sees it.",
+          "same_headline": false,
+          "same_image": true,
+          "n0": 1510,
+          "c0": 46,
+          "n1": 1575,
+          "c1": 84,
+          "observed_pp": 2.2869757174392937,
+          "observed_rel": 0.7507246376811595,
+          "p": 0.0015745266904596228,
+          "posterior_grid_pp": 0.7638487737980141,
+          "posterior_normal_pp": 0.397829627037764,
+          "shrinkage_grid": 0.6660004879049224,
+          "prob_positive_grid": 0.853318775668586
+        },
+        {
+          "test_id": "548e2c1b6539330018000000",
+          "reference_headline": "The Moment This Comedian Stopped Getting Laughs, His Life Changed Forever",
+          "winner_headline": "The Moment This Comedian Stopped Getting Laughs From His Audience, His Life Changed Forever",
+          "same_headline": false,
+          "same_image": true,
+          "n0": 3030,
+          "c0": 44,
+          "n1": 3001,
+          "c1": 79,
+          "observed_pp": 1.1803106335291975,
+          "observed_rel": 0.8128048226348792,
+          "p": 0.0011850919622528268,
+          "posterior_grid_pp": 0.7021149309406652,
+          "posterior_normal_pp": 0.5490394390435867,
+          "shrinkage_grid": 0.4051439417763265,
+          "prob_positive_grid": 0.9608589262572107
+        }
+      ]
+    }
+  },
+  "hillstrom": {
+    "check": {
+      "rows": 64000,
+      "by_segment": {
+        "Mens E-Mail": {
+          "n": 21307.0,
+          "visit": 0.18275684047496127,
+          "conversion": 0.01253109306800582,
+          "spend": 1.4226165110057727
+        },
+        "No E-Mail": {
+          "n": 21306.0,
+          "visit": 0.10616727682343002,
+          "conversion": 0.005726086548390125,
+          "spend": 0.6527893551112363
+        },
+        "Womens E-Mail": {
+          "n": 21387.0,
+          "visit": 0.151400383410483,
+          "conversion": 0.008837144059475383,
+          "spend": 1.0772015710478329
+        }
+      },
+      "overall_visit": 0.14678125,
+      "overall_conversion": 0.00903125,
+      "spend_min": 0.0,
+      "spend_max": 499.0,
+      "share_spend_positive": 0.00903125,
+      "history_min": 29.99,
+      "history_max": 3345.93,
+      "history_median": 158.11,
+      "share_history_in_its_segment_bracket": 1.0,
+      "recency_range": [
+        1,
+        12
+      ],
+      "spend_positive_without_conversion": 0
+    },
+    "balance": [
+      {
+        "covariate": "recency",
+        "omnibus_p": 0.7630833552417506,
+        "mean_control": 5.749694921618324,
+        "smd_Mens E-Mail": 0.006831532454259954,
+        "mean_Mens E-Mail": 5.773642464917633,
+        "smd_Womens E-Mail": 0.005180013205688683,
+        "mean_Womens E-Mail": 5.767849628278861
+      },
+      {
+        "covariate": "history",
+        "omnibus_p": 0.6980355980623004,
+        "mean_control": 240.8826532432179,
+        "smd_Mens E-Mail": 0.00761286832154239,
+        "mean_Mens E-Mail": 242.83593091472284,
+        "smd_Womens E-Mail": 0.006510722458553667,
+        "mean_Womens E-Mail": 242.53663346892975
+      },
+      {
+        "covariate": "mens",
+        "omnibus_p": 0.6716638885721589,
+        "mean_control": 0.5532244438186427,
+        "smd_Mens E-Mail": -0.0045823256374879625,
+        "mean_Mens E-Mail": 0.5509456985967053,
+        "smd_Womens E-Mail": -0.008630731202832915,
+        "mean_Womens E-Mail": 0.548931593958947
+      },
+      {
+        "covariate": "womens",
+        "omnibus_p": 0.7288693221012423,
+        "mean_control": 0.5476391626771802,
+        "smd_Mens E-Mail": 0.007588929691887142,
+        "mean_Mens E-Mail": 0.551415027925095,
+        "smd_Womens E-Mail": 0.004946313992582152,
+        "mean_Womens E-Mail": 0.5501005283583486
+      },
+      {
+        "covariate": "newbie",
+        "omnibus_p": 0.9338550966386445,
+        "mean_control": 0.5019712756969867,
+        "smd_Mens E-Mail": -0.0008918953696535328,
+        "mean_Mens E-Mail": 0.5015253203172666,
+        "smd_Womens E-Mail": 0.0025567009140795606,
+        "mean_Womens E-Mail": 0.5032496376303361
+      },
+      {
+        "covariate": "bal_zip_Rural",
+        "omnibus_p": 0.3481054476655565,
+        "mean_control": 0.14732939078193935,
+        "smd_Mens E-Mail": 0.01365900039927897,
+        "mean_Mens E-Mail": 0.1522035011967898,
+        "smd_Womens E-Mail": 0.00395850560137286,
+        "mean_Womens E-Mail": 0.14873521297984757
+      },
+      {
+        "covariate": "bal_zip_Surburban",
+        "omnibus_p": 0.4077429057251377,
+        "mean_control": 0.4517506805594668,
+        "smd_Mens E-Mail": -0.01174335672606268,
+        "mean_Mens E-Mail": 0.44590979490308347,
+        "smd_Womens E-Mail": -0.0010891197386245202,
+        "mean_Womens E-Mail": 0.45120867816898114
+      },
+      {
+        "covariate": "bal_zip_Urban",
+        "omnibus_p": 0.9281793867964475,
+        "mean_control": 0.4009199286585938,
+        "smd_Mens E-Mail": 0.0019722315768513645,
+        "mean_Mens E-Mail": 0.4018867039001267,
+        "smd_Womens E-Mail": -0.0017628666291550237,
+        "mean_Womens E-Mail": 0.40005610885117127
+      },
+      {
+        "covariate": "bal_channel_Multichannel",
+        "omnibus_p": 0.847088796158117,
+        "mean_control": 0.12231296348446447,
+        "smd_Mens E-Mail": -0.004181536419632754,
+        "mean_Mens E-Mail": 0.1209461679260337,
+        "smd_Womens E-Mail": -0.00528289712504171,
+        "mean_Womens E-Mail": 0.12058727264225931
+      },
+      {
+        "covariate": "bal_channel_Phone",
+        "omnibus_p": 0.21777060907383283,
+        "mean_control": 0.4377640101379893,
+        "smd_Mens E-Mail": -0.008275992307117473,
+        "mean_Mens E-Mail": 0.43366029943211154,
+        "smd_Womens E-Mail": 0.008622833281250204,
+        "mean_Womens E-Mail": 0.4420442324776733
+      },
+      {
+        "covariate": "bal_channel_Web",
+        "omnibus_p": 0.23342224006429646,
+        "mean_control": 0.4399230263775462,
+        "smd_Mens E-Mail": 0.011013588354428299,
+        "mean_Mens E-Mail": 0.4453935326418548,
+        "smd_Womens E-Mail": -0.005147863897421752,
+        "mean_Womens E-Mail": 0.43736849488006735
+      }
+    ],
+    "estimates": [
+      {
+        "treatment": "Mens E-Mail",
+        "outcome": "spend",
+        "estimator": "Difference in means",
+        "est": 0.7698271558945368,
+        "se": 0.14524656024868676,
+        "n_treat": 21307,
+        "n_ctrl": 21306,
+        "ci_low": 0.48514912892878365,
+        "ci_high": 1.0545051828602898,
+        "ci_width": 0.5693560539315062,
+        "variance_reduction": 0.0,
+        "ci_width_change": 0.0,
+        "equivalent_sample_multiplier": 1.0,
+        "r2_history_control": 0.0002162824643272554,
+        "r2_all_control": 0.0017911908340385585
+      },
+      {
+        "treatment": "Mens E-Mail",
+        "outcome": "spend",
+        "estimator": "CUPED (history)",
+        "est": 0.7674384994278023,
+        "se": 0.14521504219411457,
+        "n_treat": 21307,
+        "n_ctrl": 21306,
+        "ci_low": 0.4828222467138734,
+        "ci_high": 1.0520547521417312,
+        "ci_width": 0.5692325054278577,
+        "variance_reduction": 0.0004339467297265198,
+        "ci_width_change": -0.00021699690869247945,
+        "equivalent_sample_multiplier": 1.0004341351212427,
+        "r2_history_control": 0.0002162824643272554,
+        "r2_all_control": 0.0017911908340385585
+      },
+      {
+        "treatment": "Mens E-Mail",
+        "outcome": "spend",
+        "estimator": "CUPED (all pre-period)",
+        "est": 0.7651063140451293,
+        "se": 0.1451376788504117,
+        "n_treat": 21307,
+        "n_ctrl": 21306,
+        "ci_low": 0.48064169069858165,
+        "ci_high": 1.0495709373916768,
+        "ci_width": 0.5689292466930953,
+        "variance_reduction": 0.0014987010725101557,
+        "ci_width_change": -0.0007496315099554396,
+        "equivalent_sample_multiplier": 1.0015009505487074,
+        "r2_history_control": 0.0002162824643272554,
+        "r2_all_control": 0.0017911908340385585
+      },
+      {
+        "treatment": "Mens E-Mail",
+        "outcome": "spend",
+        "estimator": "Lin (history)",
+        "est": 0.7674802347912693,
+        "se": 0.1451461882499886,
+        "n_treat": 21307,
+        "n_ctrl": 21306,
+        "ci_low": 0.48299893332802085,
+        "ci_high": 1.0519615362545176,
+        "ci_width": 0.5689626029264968,
+        "variance_reduction": 0.0013816136879458707,
+        "ci_width_change": -0.0006910456159947564,
+        "equivalent_sample_multiplier": 1.0013835251852794,
+        "r2_history_control": 0.0002162824643272554,
+        "r2_all_control": 0.0017911908340385585
+      },
+      {
+        "treatment": "Mens E-Mail",
+        "outcome": "spend",
+        "estimator": "Lin (all pre-period)",
+        "est": 0.7654040347431925,
+        "se": 0.1452777972621383,
+        "n_treat": 21307,
+        "n_ctrl": 21306,
+        "ci_low": 0.4806647843560898,
+        "ci_high": 1.0501432851302952,
+        "ci_width": 0.5694785007742055,
+        "variance_reduction": -0.0004301702201428004,
+        "ci_width_change": 0.00021506198424292577,
+        "equivalent_sample_multiplier": 0.9995700147467083,
+        "r2_history_control": 0.0002162824643272554,
+        "r2_all_control": 0.0017911908340385585
+      },
+      {
+        "treatment": "Mens E-Mail",
+        "outcome": "visit",
+        "estimator": "Difference in means",
+        "est": 0.07658956365153125,
+        "se": 0.0033858878117283653,
+        "n_treat": 21307,
+        "n_ctrl": 21306,
+        "ci_low": 0.06995334548485052,
+        "ci_high": 0.08322578181821197,
+        "ci_width": 0.013272436333361462,
+        "variance_reduction": 0.0,
+        "ci_width_change": 0.0,
+        "equivalent_sample_multiplier": 1.0,
+        "r2_history_control": 0.004212036031598476,
+        "r2_all_control": 0.03019337506970876
+      },
+      {
+        "treatment": "Mens E-Mail",
+        "outcome": "visit",
+        "estimator": "CUPED (history)",
+        "est": 0.07641114745941802,
+        "se": 0.0033783604804229414,
+        "n_treat": 21307,
+        "n_ctrl": 21306,
+        "ci_low": 0.06978968259099562,
+        "ci_high": 0.08303261232784041,
+        "ci_width": 0.0132429297368448,
+        "variance_reduction": 0.004441354549223231,
+        "ci_width_change": -0.002223148469169489,
+        "equivalent_sample_multiplier": 1.004461168178809,
+        "r2_history_control": 0.004212036031598476,
+        "r2_all_control": 0.03019337506970876
+      },
+      {
+        "treatment": "Mens E-Mail",
+        "outcome": "visit",
+        "estimator": "CUPED (all pre-period)",
+        "est": 0.07603824926966476,
+        "se": 0.0033356575541892194,
+        "n_treat": 21307,
+        "n_ctrl": 21306,
+        "ci_low": 0.06950048059869493,
+        "ci_high": 0.0825760179406346,
+        "ci_width": 0.013075537341939667,
+        "variance_reduction": 0.029450278826533394,
+        "ci_width_change": -0.014835180706564866,
+        "equivalent_sample_multiplier": 1.030343915601692,
+        "r2_history_control": 0.004212036031598476,
+        "r2_all_control": 0.03019337506970876
+      },
+      {
+        "treatment": "Mens E-Mail",
+        "outcome": "visit",
+        "estimator": "Lin (history)",
+        "est": 0.07641291270172561,
+        "se": 0.0033783361209506007,
+        "n_treat": 21307,
+        "n_ctrl": 21306,
+        "ci_low": 0.06979149557699169,
+        "ci_high": 0.08303432982645953,
+        "ci_width": 0.013242834249467858,
+        "variance_reduction": 0.004455711333229417,
+        "ci_width_change": -0.0022303428812987525,
+        "equivalent_sample_multiplier": 1.0044756535534913,
+        "r2_history_control": 0.004212036031598476,
+        "r2_all_control": 0.03019337506970876
+      },
+      {
+        "treatment": "Mens E-Mail",
+        "outcome": "visit",
+        "estimator": "Lin (all pre-period)",
+        "est": 0.07606061134184104,
+        "se": 0.0033362435116757985,
+        "n_treat": 21307,
+        "n_ctrl": 21306,
+        "ci_low": 0.06952169421530104,
+        "ci_high": 0.08259952846838105,
+        "ci_width": 0.013077834253080001,
+        "variance_reduction": 0.029109266107852916,
+        "ci_width_change": -0.014662121964172492,
+        "equivalent_sample_multiplier": 1.0299820207276658,
+        "r2_history_control": 0.004212036031598476,
+        "r2_all_control": 0.03019337506970876
+      },
+      {
+        "treatment": "Womens E-Mail",
+        "outcome": "spend",
+        "estimator": "Difference in means",
+        "est": 0.4244122159365967,
+        "se": 0.13033285852919116,
+        "n_treat": 21387,
+        "n_ctrl": 21306,
+        "ci_low": 0.16896450721722805,
+        "ci_high": 0.6798599246559653,
+        "ci_width": 0.5108954174387373,
+        "variance_reduction": 0.0,
+        "ci_width_change": 0.0,
+        "equivalent_sample_multiplier": 1.0,
+        "r2_history_control": 0.0002162824643272554,
+        "r2_all_control": 0.0017911908340385585
+      },
+      {
+        "treatment": "Womens E-Mail",
+        "outcome": "spend",
+        "estimator": "CUPED (history)",
+        "est": 0.42270092315649777,
+        "se": 0.13030821906506285,
+        "n_treat": 21387,
+        "n_ctrl": 21306,
+        "ci_low": 0.16730150689941897,
+        "ci_high": 0.6781003394135765,
+        "ci_width": 0.5107988325141576,
+        "variance_reduction": 0.0003780648311939583,
+        "ci_width_change": -0.00018905028560245452,
+        "equivalent_sample_multiplier": 1.000378207818269,
+        "r2_history_control": 0.0002162824643272554,
+        "r2_all_control": 0.0017911908340385585
+      },
+      {
+        "treatment": "Womens E-Mail",
+        "outcome": "spend",
+        "estimator": "CUPED (all pre-period)",
+        "est": 0.4257332609429728,
+        "se": 0.13024449322883438,
+        "n_treat": 21387,
+        "n_ctrl": 21306,
+        "ci_low": 0.17045874502978647,
+        "ci_high": 0.6810077768561591,
+        "ci_width": 0.5105490318263727,
+        "variance_reduction": 0.001355534523601598,
+        "ci_width_change": -0.0006779971018358033,
+        "equivalent_sample_multiplier": 1.0013573744915865,
+        "r2_history_control": 0.0002162824643272554,
+        "r2_all_control": 0.0017911908340385585
+      },
+      {
+        "treatment": "Womens E-Mail",
+        "outcome": "spend",
+        "estimator": "Lin (history)",
+        "est": 0.4227135871563523,
+        "se": 0.13022827082010552,
+        "n_treat": 21387,
+        "n_ctrl": 21306,
+        "ci_low": 0.16747086658001703,
+        "ci_high": 0.6779563077326876,
+        "ci_width": 0.5104854411526706,
+        "variance_reduction": 0.0016042883769535887,
+        "ci_width_change": -0.0008024661644492337,
+        "equivalent_sample_multiplier": 1.0016068662538078,
+        "r2_history_control": 0.0002162824643272554,
+        "r2_all_control": 0.0017911908340385585
+      },
+      {
+        "treatment": "Womens E-Mail",
+        "outcome": "spend",
+        "estimator": "Lin (all pre-period)",
+        "est": 0.4258794092155067,
+        "se": 0.13037887516004554,
+        "n_treat": 21387,
+        "n_ctrl": 21306,
+        "ci_low": 0.17034150955697358,
+        "ci_high": 0.6814173088740398,
+        "ci_width": 0.5110757993170663,
+        "variance_reduction": -0.00070626478880631,
+        "ci_width_change": 0.0003530700651674934,
+        "equivalent_sample_multiplier": 0.9992942336691023,
+        "r2_history_control": 0.0002162824643272554,
+        "r2_all_control": 0.0017911908340385585
+      },
+      {
+        "treatment": "Womens E-Mail",
+        "outcome": "visit",
+        "estimator": "Difference in means",
+        "est": 0.045233106587052985,
+        "se": 0.003234462099090751,
+        "n_treat": 21387,
+        "n_ctrl": 21306,
+        "ci_low": 0.03889367736347529,
+        "ci_high": 0.051572535810630676,
+        "ci_width": 0.01267885844715539,
+        "variance_reduction": 0.0,
+        "ci_width_change": 0.0,
+        "equivalent_sample_multiplier": 1.0,
+        "r2_history_control": 0.004212036031598476,
+        "r2_all_control": 0.03019337506970876
+      },
+      {
+        "treatment": "Womens E-Mail",
+        "outcome": "visit",
+        "estimator": "CUPED (history)",
+        "est": 0.04509494235220493,
+        "se": 0.003227980900964544,
+        "n_treat": 21387,
+        "n_ctrl": 21306,
+        "ci_low": 0.03876821604353127,
+        "ci_high": 0.05142166866087859,
+        "ci_width": 0.012653452617347322,
+        "variance_reduction": 0.004003574277580468,
+        "ci_width_change": -0.002003794735461306,
+        "equivalent_sample_multiplier": 1.0040196673142443,
+        "r2_history_control": 0.004212036031598476,
+        "r2_all_control": 0.03019337506970876
+      },
+      {
+        "treatment": "Womens E-Mail",
+        "outcome": "visit",
+        "estimator": "CUPED (all pre-period)",
+        "est": 0.04542294864476995,
+        "se": 0.0031917464129451504,
+        "n_treat": 21387,
+        "n_ctrl": 21306,
+        "ci_low": 0.03916724062761255,
+        "ci_high": 0.05167865666192735,
+        "ci_width": 0.012511416034314804,
+        "variance_reduction": 0.02623844340095205,
+        "ci_width_change": -0.01320642655160753,
+        "equivalent_sample_multiplier": 1.0269454500674602,
+        "r2_history_control": 0.004212036031598476,
+        "r2_all_control": 0.03019337506970876
+      },
+      {
+        "treatment": "Womens E-Mail",
+        "outcome": "visit",
+        "estimator": "Lin (history)",
+        "est": 0.04509551499095224,
+        "se": 0.003228096452847327,
+        "n_treat": 21387,
+        "n_ctrl": 21306,
+        "ci_low": 0.03876856220474998,
+        "ci_high": 0.0514224677771545,
+        "ci_width": 0.012653905572404523,
+        "variance_reduction": 0.003932265725460127,
+        "ci_width_change": -0.0019680695115312785,
+        "equivalent_sample_multiplier": 1.0039477894827344,
+        "r2_history_control": 0.004212036031598476,
+        "r2_all_control": 0.03019337506970876
+      },
+      {
+        "treatment": "Womens E-Mail",
+        "outcome": "visit",
+        "estimator": "Lin (all pre-period)",
+        "est": 0.04543331913688535,
+        "se": 0.003188678389428446,
+        "n_treat": 21387,
+        "n_ctrl": 21306,
+        "ci_low": 0.03918362433532441,
+        "ci_high": 0.05168301393844629,
+        "ci_width": 0.012499389603121878,
+        "variance_reduction": 0.028109574193034614,
+        "ci_width_change": -0.014154968665477718,
+        "equivalent_sample_multiplier": 1.0289225754741798,
+        "r2_history_control": 0.004212036031598476,
+        "r2_all_control": 0.03019337506970876
+      }
+    ],
+    "subgroups": {
+      "families": {
+        "spend": {
+          "effect_nonzero": {
+            "tests": 46,
+            "naive": 31,
+            "holm": 11,
+            "bh": 28
+          },
+          "differs_from_rest": {
+            "tests": 40,
+            "naive": 2,
+            "holm": 0,
+            "bh": 0
+          }
+        },
+        "visit": {
+          "effect_nonzero": {
+            "tests": 46,
+            "naive": 46,
+            "holm": 46,
+            "bh": 46
+          },
+          "differs_from_rest": {
+            "tests": 40,
+            "naive": 3,
+            "holm": 2,
+            "bh": 2
+          }
+        },
+        "all_heterogeneity_both_outcomes": {
+          "tests": 80,
+          "naive": 5,
+          "holm": 2,
+          "bh": 2
+        }
+      },
+      "n_levels_per_arm": 23,
+      "naive_heterogeneity_findings": [
+        {
+          "treatment": "Womens E-Mail",
+          "outcome": "spend",
+          "variable": "history_segment",
+          "level": "3) $200 - $350",
+          "cate": -0.3231407388759745,
+          "diff_vs_rest": -0.9258853509160747,
+          "p_hetero": 0.004312182854482121,
+          "p_hetero_holm": 0.17248731417928484,
+          "p_hetero_bh": 0.17248731417928484
+        },
+        {
+          "treatment": "Womens E-Mail",
+          "outcome": "spend",
+          "variable": "newbie",
+          "level": "1",
+          "cate": 0.7322877956561398,
+          "diff_vs_rest": 0.6183306751185753,
+          "p_hetero": 0.01774237719547565,
+          "p_hetero_holm": 0.6919527106235503,
+          "p_hetero_bh": 0.354847543909513
+        },
+        {
+          "treatment": "Mens E-Mail",
+          "outcome": "visit",
+          "variable": "womens",
+          "level": "1",
+          "cate": 0.08255811704031121,
+          "diff_vs_rest": 0.013402952869888476,
+          "p_hetero": 0.047676127423242724,
+          "p_hetero_holm": 1.0,
+          "p_hetero_bh": 0.39184009253272983
+        },
+        {
+          "treatment": "Womens E-Mail",
+          "outcome": "visit",
+          "variable": "mens",
+          "level": "1",
+          "cate": 0.02175324098142367,
+          "diff_vs_rest": -0.052232094039423,
+          "p_hetero": 1.003318652240154e-15,
+          "p_hetero_holm": 3.912942743736601e-14,
+          "p_hetero_bh": 2.0066373044803084e-14
+        },
+        {
+          "treatment": "Womens E-Mail",
+          "outcome": "visit",
+          "variable": "womens",
+          "level": "1",
+          "cate": 0.07311454855041033,
+          "diff_vs_rest": 0.06203608130574394,
+          "p_hetero": 2.832840318563184e-22,
+          "p_hetero_holm": 1.1331361274252737e-20,
+          "p_hetero_bh": 1.1331361274252737e-20
+        }
+      ]
+    }
+  }
+}
