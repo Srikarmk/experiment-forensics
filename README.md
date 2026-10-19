@@ -65,6 +65,8 @@ and test on the other. This project uses them that way:
    the list of numbers to compare, each with the criterion it has to meet to count as replicating.
 3. The plan was committed, then the lock file in a separate commit, then the confirmatory analysis ran
    once (see the git history).
+   Changes made after the lock are listed in [`DEVIATIONS.md`](DEVIATIONS.md), since editing the locked
+   plan would break its digest.
    `forensics` refuses to load the confirmatory file unless `ANALYSIS_PLAN.lock` exists, and if the lock
    holds a sha256 digest it must match the plan.
 

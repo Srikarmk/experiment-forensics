@@ -92,7 +92,9 @@ def shrinkage_plot(comp, sig, examples, path: Path):
                linewidths=0, label="all arm comparisons")
     ax.scatter(sig["diff"] * 100, sig["post_grid"] * 100, s=12, color=BLUE, alpha=0.8, linewidths=0,
                label="significant winners (p < 0.05)")
-    lim = max(abs(comp["diff"]).quantile(0.999), abs(sig["diff"]).max()) * 100
+    ex_max = max((abs(e["observed_pp"]) for e in examples), default=0)
+    lim = max(abs(comp["diff"]).quantile(0.999) * 100, abs(sig["diff"]).quantile(0.995) * 100, ex_max) * 1.1
+    clipped = int(((abs(comp["diff"]) * 100 > lim) | (abs(comp["post_grid"]) * 100 > lim)).sum())
     ax.plot([-lim, lim], [-lim, lim], color=MUTED, lw=1, ls="--")
     ax.text(lim * 0.95, lim * 0.82, "no shrinkage", color=MUTED, fontsize=9, ha="right")
     for e in examples:
@@ -102,6 +104,8 @@ def shrinkage_plot(comp, sig, examples, path: Path):
     ax.set_xlabel("Observed difference vs first arm (pp)", color=INK)
     ax.set_ylabel("Empirical-Bayes posterior mean (pp)", color=INK)
     ax.set_title("Observed vs empirical-Bayes differences", color=INK, fontsize=11, loc="left")
+    if clipped:
+        fig.text(0.5, 0.005, f"{clipped} comparison{'s' if clipped != 1 else ''} beyond the axes not shown.", ha="center", color=MUTED, fontsize=8)
     ax.legend(frameon=False, fontsize=9, loc="upper left")
     _style(ax)
     _save(fig, path)
