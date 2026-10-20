@@ -1,5 +1,7 @@
 # experiment-forensics
 
+<a href="https://www.srikarmk.dev/projects/experiment-forensics"><img alt="Case study" src="https://img.shields.io/badge/case%20study-srikarmk.dev-5b4fc9" /></a> <a href="ANALYSIS_PLAN.md"><img alt="Pre-registered" src="https://img.shields.io/badge/plan-locked%20before%20confirmation-5b4fc9" /></a> <a href="pyproject.toml"><img alt="Python" src="https://img.shields.io/badge/python-3.11%2B-blue" /></a> <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-blue" /></a>
+
 How much does the *analysis* of an A/B test change its answer, when the data and the test are fixed?
 This project looks at three choices: when you look at the results, how you control variance, and how many
 subgroups you check. It uses two public experiment datasets.

@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "Experiment Forensics: re-analysing real A/B tests"
+abstract: "A pre-registered re-analysis of 22,743 Upworthy headline A/B tests and the Hillstrom email test: power, peeking, the winner's curse, variance reduction and subgroups."
+authors:
+  - family-names: Manda
+    given-names: Kameswara Sai Srikar
+date-released: "2026-10-18"
+url: "https://www.srikarmk.dev/projects/experiment-forensics"
+repository-code: "https://github.com/Srikarmk/experiment-forensics"
+license: MIT
+keywords: [ab testing, experimentation, statistics, empirical bayes, cuped]
